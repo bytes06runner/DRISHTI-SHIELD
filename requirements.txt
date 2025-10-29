@@ -1,0 +1,12 @@
+torch
+transformers
+pillow
+opencv-python-headless
+numpy
+scikit-image  # For SSIM in advanced change detection
+pydantic      # For API models
+openai
+fastapi  # For src/api/main.py
+uvicorn[standard]  # To run the API
+python-multipart  # For file uploads
+rasterio  # For geospatial processing
