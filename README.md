@@ -1,79 +1,83 @@
-# 🛡️ DRISHTI-SHIELD
-## Advanced Satellite Intelligence Analysis System
+# 🛡️ DRISHTI-SHIELD V2
+## Professional GEOINT Analysis Platform
 
 ### 🎯 Overview
-DRISHTI-SHIELD is a comprehensive satellite imagery analysis platform designed for the Indian Armed Forces. It leverages cutting-edge AI technologies including Vision Transformers, Change Detection, and Large Language Models to provide real-time intelligence analysis from satellite imagery.
+DRISHTI-SHIELD V2 is a cutting-edge satellite intelligence analysis platform designed for professional GEOINT operations. It features advanced AI technologies including SSIM-based change detection, interactive AOI selection, real-time satellite feeds, and comprehensive data fusion capabilities.
 
 ### 🏗️ Architecture
 
 ```
 ┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐
-│   Frontend      │───▶│   FastAPI        │───▶│   ML Pipeline   │
-│   (HTML/JS/     │    │   Backend        │    │   (PyTorch/     │
-│   Leaflet)      │    │                  │    │   Transformers) │
+│   Professional  │───▶│   FastAPI V2     │───▶│   Advanced AI   │
+│   Frontend      │    │   Backend        │    │   Pipeline      │
+│   (Leaflet.js)  │    │                  │    │   (SSIM/ViT)    │
 └─────────────────┘    └──────────────────┘    └─────────────────┘
          │                        │                       │
          ▼                        ▼                       ▼
 ┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐
-│ Interactive Map │    │ File Processing  │    │ Object Detection│
-│ Visualization   │    │ & API Endpoints  │    │ Change Detection│
-│                 │    │                  │    │ Report Generation│
+│ Interactive AOI │    │ GeoJSON API      │    │ SSIM Detection  │
+│ Drawing Tools   │    │ Satellite Layers │    │ Data Fusion     │
+│ NASA VIIRS      │    │ Professional UI  │    │ Risk Scoring    │
 └─────────────────┘    └──────────────────┘    └─────────────────┘
 ```
 
-### 🚀 Features
+### 🚀 V2 Features
 
-#### Backend (FastAPI)
-- ✅ **File Upload API** - Accepts before/after satellite images
-- ✅ **ML Pipeline Integration** - Vision Transformer object detection
-- ✅ **Change Detection** - Pixel-level change analysis
-- ✅ **Intelligence Reporting** - LLM-powered military-style reports
-- ✅ **GeoJSON Conversion** - Pixel coordinates to lat/lng mapping
-- ✅ **CORS Support** - Cross-origin requests enabled
+#### Advanced Backend (FastAPI V2)
+- ✅ **AOI Analysis API** - Geographic bounds-based analysis
+- ✅ **SSIM Change Detection** - Structural similarity analysis
+- ✅ **Data Fusion Engine** - AI detection + change analysis
+- ✅ **Professional Reporting** - Military-grade intelligence summaries
+- ✅ **GeoJSON Integration** - Precise coordinate mapping
+- ✅ **Risk Assessment** - Automated threat scoring
 - ✅ **Interactive Documentation** - Swagger UI at `/docs`
 
-#### Frontend (Interactive Web App)
-- ✅ **Drag & Drop Interface** - Easy image upload
-- ✅ **Interactive Mapping** - Leaflet.js powered map
-- ✅ **Real-time Analysis** - Live processing status
-- ✅ **Anomaly Visualization** - Clickable map markers
-- ✅ **Military-style UI** - Professional defense interface
-- ✅ **Intelligence Reports** - Formatted analysis results
+#### Professional Frontend (Leaflet.js)
+- ✅ **Interactive AOI Selection** - Draw rectangles on map
+- ✅ **Real-time Satellite Layer** - NASA VIIRS integration
+- ✅ **Professional UI** - Multi-panel military interface
+- ✅ **Loading States** - Professional feedback system
+- ✅ **Anomaly Mapping** - GeoJSON markers with popups
+- ✅ **Intelligence Reports** - Modal-based report viewer
+- ✅ **Responsive Design** - Tailwind CSS styling
 
-#### ML Pipeline
-- ✅ **Vision Transformer** - Hugging Face transformers
-- ✅ **Change Detection** - OpenCV-based analysis
-- ✅ **Risk Scoring** - Automated threat assessment
-- ✅ **Report Generation** - LLM-powered summaries
+#### Advanced ML Pipeline
+- ✅ **SSIM-based Change Detection** - Structural similarity analysis
+- ✅ **Vision Transformer** - Hugging Face object detection
+- ✅ **Data Fusion** - Combines detection + change analysis
+- ✅ **Risk Scoring Algorithm** - Automated threat assessment
+- ✅ **LLM Report Generation** - Contextual intelligence summaries
 
 ### 📁 Project Structure
 
 ```
 DRISHTI-SHIELD/
-├── 🛡️ Backend (Python/FastAPI)
+├── 🛡️ Backend V2 (Python/FastAPI)
 │   ├── src/
 │   │   ├── pipeline/
 │   │   │   ├── object_detection.py     # Vision Transformer
-│   │   │   ├── change_detection.py     # Change analysis
-│   │   │   └── report_generator.py     # LLM reports
-│   │   ├── api/
-│   │   │   └── main.py                 # FastAPI routes
+│   │   │   ├── change_detection.py     # SSIM-based analysis
+│   │   │   └── report_generator.py     # Enhanced LLM reports
 │   │   └── utils/
 │   │       └── geo_utils.py            # GeoJSON conversion
-│   ├── api_server.py                   # Main server file
-│   ├── requirements.txt                # Python dependencies
+│   ├── api_server.py                   # V2 FastAPI server
+│   ├── requirements.txt                # Updated dependencies
 │   └── venv/                          # Virtual environment
 │
-├── 🌐 Frontend (HTML/CSS/JS)
-│   └── index.html                      # Complete web application
+├── 🌐 Professional Frontend (Leaflet.js)
+│   └── frontend/
+│       └── index.html                  # Professional UI
 │
-├── 📊 Test Data
-│   └── test_images/
-│       ├── satellite_before.png       # Sample before image
-│       └── satellite_after.png        # Sample after image
+├── 📊 Demo Data
+│   └── data/
+│       ├── dummy_before.png           # Realistic before image
+│       └── dummy_after.png            # After image with changes
 │
-└── 📁 Static Files
-    └── static/                        # Served assets
+├── 📁 Static Files
+│   └── static/                        # Generated change masks
+│
+└── 🚀 Automation
+    └── start_system.sh                # V2 startup script
 ```
 
 ### 🔧 Installation & Setup
@@ -98,49 +102,60 @@ Open `frontend/index.html` in your web browser or use:
 open frontend/index.html
 ```
 
-### 🎮 Usage Instructions
+### 🎮 V2 Usage Instructions
 
-#### 1. **Upload Images**
-   - Click "📸 Before Image" to upload the first satellite image
-   - Click "📸 After Image" to upload the second satellite image
-   - Supported formats: PNG, JPG, JPEG
+#### 1. **Select Area of Interest (AOI)**
+   - Use the rectangle drawing tool on the map
+   - Draw over any geographic region of interest
+   - Toggle satellite layer (NASA VIIRS) for context
 
-#### 2. **Analyze Imagery** 
-   - Click "🔍 Analyze Imagery" button
-   - Wait for processing (3-5 seconds)
-   - Watch the status indicator for progress
+#### 2. **Analyze AOI** 
+   - Click "Analyze Selected AOI" button
+   - Watch professional loading animation
+   - SSIM-based change detection runs automatically
 
-#### 3. **View Results**
-   - **Map View**: Interactive map with anomaly markers
-   - **Intelligence Report**: Military-formatted analysis
-   - **Risk Score**: Automated threat assessment
-   - **Anomaly Details**: Click map markers for details
+#### 3. **View Professional Results**
+   - **Interactive Map**: GeoJSON anomaly markers with popups
+   - **Risk Assessment**: Numerical threat scoring
+   - **Key Detections**: Sidebar summary of findings
+   - **Full LLM Report**: Modal with detailed intelligence analysis
+   - **Change Mask Overlay**: Visual representation of detected changes
 
-### 🛠️ API Endpoints
+### 🛠️ V2 API Endpoints
 
 #### `GET /`
 Health check endpoint
 ```json
-{"message": "DRISHTI-SHIELD API is running!", "version": "1.0.0"}
+{"message": "DRISHTI-SHIELD API is running!", "version": "2.0.0"}
 ```
 
-#### `POST /api/v1/analyze`
-Main analysis endpoint
-- **Input**: `multipart/form-data` with `image_before` and `image_after`
-- **Output**: Complete analysis results
+#### `POST /api/v1/analyze_aoi`
+**NEW V2 Endpoint**: Area of Interest analysis
+- **Input**: JSON with AOI bounds
+- **Output**: Complete GEOINT analysis
 
+**Request:**
 ```json
 {
-    "success": true,
-    "report_summary": "Military intelligence report...",
-    "change_mask_url": "/static/change_mask_demo.png",
+    "aoi_bounds": {
+        "north_east": {"lat": 28.7041, "lng": 77.1025},
+        "south_west": {"lat": 28.5355, "lng": 76.9906}
+    }
+}
+```
+
+**Response:**
+```json
+{
+    "report_summary": "Professional intelligence report...",
+    "change_mask_url": "http://127.0.0.1:8000/static/change_mask_latest.png",
     "anomalies_geojson": {
         "type": "FeatureCollection",
         "features": [...]
     },
-    "image_bounds": [[40.712, -74.227], [40.774, -74.125]],
-    "risk_score": 9.2,
-    "processing_time": "3.4s"
+    "image_bounds": {"north_east": {...}, "south_west": {...}},
+    "risk_score": 7.8,
+    "fused_data": [...]
 }
 ```
 
@@ -227,6 +242,6 @@ curl -X POST "http://127.0.0.1:8000/api/v1/analyze" \
 
 ---
 
-**🛡️ DRISHTI-SHIELD - Empowering National Security Through AI**
+**🛡️ DRISHTI-SHIELD V2 - Professional GEOINT Analysis Platform**
 
 *Built for Smart India Hackathon 2025*
